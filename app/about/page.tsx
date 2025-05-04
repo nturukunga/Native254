@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
           <div className="md:w-1/2 relative h-[300px] w-full rounded-xl overflow-hidden">
             <Image 
-              src="!native254/img/ ABOUT US.png" 
+              src="/img/ ABOUT US.png" 
               alt="Native254 Team" 
               fill
               style={{ objectFit: 'cover' }}
@@ -160,19 +160,19 @@ export default function AboutPage() {
           <TeamMember 
             name="Munene (Native)" 
             position="CEO & Founder" 
-            image="/team/ceo.jpg" 
+            image="/img/team member.png" 
             bio="Munene has over 4 years of experience in technology and business leadership."
           />
           <TeamMember 
             name="Wangari Leen" 
             position="CTO" 
-            image="/team/cto.jpg" 
+            image="/img/team member.png" 
             bio="Leen leads our technical team with expertise in software architecture and emerging technologies."
           />
           <TeamMember 
             name="Sarah Johnson" 
             position="Creative Director" 
-            image="/team/creative.jpg" 
+            image="/img/team member.png" 
             bio="Sarah brings creative vision and design excellence to all our projects."
           />
         </div>

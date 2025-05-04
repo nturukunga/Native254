@@ -9,31 +9,31 @@ const services = [
     id: 1,
     title: 'Web Development',
     description: 'Custom websites built with modern technologies and responsive design.',
-    image: 'public\models\services\web-development.glb',
+    image: '/services/web-development.png', // Updated to PNG
   },
   {
     id: 2,
     title: 'Mobile Applications',
     description: 'Native and cross-platform mobile apps for iOS and Android.',
-    image: 'public\models\services\mobile-apps.glb ',
+    image: '/services/mobile-apps.png', // Updated to PNG
   },
   {
     id: 3,
     title: 'UI/UX Design',
     description: 'User-centered design that enhances user experience and satisfaction.',
-    image: 'public\models\services\ui-ux-design.glb',
+    image: '/services/ui-ux-design.png', // Updated to PNG
   },
   {
     id: 4,
     title: 'Brand Identity',
     description: 'Creating memorable brands that resonate with your target audience.',
-    image: 'public\models\services\brand-identity.glb',
+    image: '/services/brand-identity.png', // Updated to PNG
   },
   {
     id: 5,
     title: 'Digital Marketing',
     description: 'Strategies to grow your online presence and drive conversions.',
-    image: 'public\models\services\digital-marketing.glb',
+    image: '/services/digital-marketing.png', // Updated to PNG
   },
 ]
 
@@ -216,4 +216,4 @@ export default function ServiceSlider() {
       </div>
     </div>
   )
-} 
+}
