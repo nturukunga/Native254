@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background polygon -->
+  <polygon points="30,4 56,20 56,40 30,56 4,40 4,20" fill="#1a1a2e" stroke="#6d28d9" stroke-width="2" />
+  
+  <!-- Circuit-like patterns -->
+  <circle cx="30" cy="30" r="12" fill="none" stroke="#6d28d9" stroke-width="1.5" />
+  <circle cx="30" cy="30" r="5" fill="#6d28d9" />
+  
+  <!-- Connection lines -->
+  <line x1="30" y1="18" x2="30" y2="4" stroke="#6d28d9" stroke-width="1.5" />
+  <line x1="30" y1="42" x2="30" y2="56" stroke="#6d28d9" stroke-width="1.5" />
+  <line x1="18" y1="30" x2="4" y2="30" stroke="#6d28d9" stroke-width="1.5" />
+  <line x1="42" y1="30" x2="56" y2="30" stroke="#6d28d9" stroke-width="1.5" />
+  
+  <!-- Digital elements -->
+  <circle cx="30" cy="4" r="2" fill="#6d28d9" />
+  <circle cx="30" cy="56" r="2" fill="#6d28d9" />
+  <circle cx="4" cy="30" r="2" fill="#6d28d9" />
+  <circle cx="56" cy="30" r="2" fill="#6d28d9" />
+  
+  <!-- Additional circuit details -->
+  <rect x="25" y="10" width="10" height="2" fill="#6d28d9" />
+  <rect x="25" y="48" width="10" height="2" fill="#6d28d9" />
+  <rect x="10" y="25" width="2" height="10" fill="#6d28d9" />
+  <rect x="48" y="25" width="2" height="10" fill="#6d28d9" />
+  
+  <!-- Numbers "254" hidden in the design -->
+  <path d="M26,34 L28,30 L30,34 L32,30 L34,34" stroke="#ffffff" stroke-width="1" fill="none" />
+</svg>

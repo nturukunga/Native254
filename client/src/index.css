@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 5%;
+  --card-foreground: 224 71.4% 4.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71.4% 4.1%;
+  --primary: 349 89% 60%; /* Persona 5 red */
+  --primary-foreground: 210 20% 98%;
+  --secondary: 220 14.3% 95.9%;
+  --secondary-foreground: 220.9 39.3% 11%;
+  --muted: 220 14.3% 95.9%;
+  --muted-foreground: 220 8.9% 46.1%;
+  --accent: 220 14.3% 95.9%;
+  --accent-foreground: 220.9 39.3% 11%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 349 89% 60%;
+  --radius: 0.5rem;
+
+  /* Persona 5 inspired elements */
+  --persona-black: 0 0% 0%;
+  --persona-red: 349 89% 60%;
+  --persona-yellow: 42 100% 61%;
+}
+
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 210 20% 98%;
+  --card: 220 40% 13%;
+  --card-foreground: 210 20% 98%;
+  --popover: 220 40% 13%;
+  --popover-foreground: 210 20% 98%;
+  --primary: 349 89% 60%; /* Keep Persona 5 red in dark mode too */
+  --primary-foreground: 210 20% 98%;
+  --secondary: 215 27.9% 16.9%;
+  --secondary-foreground: 210 20% 98%;
+  --muted: 215 27.9% 16.9%;
+  --muted-foreground: 217.9 10.6% 64.9%;
+  --accent: 215 27.9% 16.9%;
+  --accent-foreground: 210 20% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 215 27.9% 16.9%;
+  --input: 215 27.9% 16.9%;
+  --ring: 349 89% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Glass morphism utilities */
+.glass {
+  @apply bg-white/25 backdrop-blur-md rounded-xl border border-white/20 shadow-lg;
+}
+
+.dark .glass {
+  @apply bg-black/25 backdrop-blur-md rounded-xl border border-white/10 shadow-lg;
+}
+
+/* Fluent design utilities */
+.fluent-card {
+  @apply rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md;
+}
+
+.fluent-button {
+  @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+}
+
+.fluent-input {
+  @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* 3D transforms */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Persona 5 inspired styles */
+.persona-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.persona-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(var(--primary));
+  transform: skewX(-20deg);
+}
+
+.persona-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.persona-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 25%, hsl(var(--primary)) 25%, hsl(var(--primary)) 50%, transparent 50%, transparent 75%, hsl(var(--primary)) 75%);
+  background-size: 10px 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.persona-card:hover::before {
+  opacity: 0.1;
+}
+
+.persona-button {
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(var(--primary));
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.3s ease;
+  transform: skewX(-10deg);
+}
+
+.persona-button:hover {
+  box-shadow: 0 0 15px hsl(var(--primary) / 0.7);
+}
+
+.persona-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(30deg);
+  transition: all 0.5s ease;
+}
+
+.persona-button:hover::after {
+  animation: persona-shine 1.5s infinite;
+}
+
+@keyframes persona-shine {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
+}
+
+/* Vintage Mac styling */
+.vintage-screen {
+  border: 8px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #9cefe4;
+  color: #333;
+  font-family: monospace;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .vintage-screen {
+  background-color: #103440;
+  color: #9cefe4;
+}

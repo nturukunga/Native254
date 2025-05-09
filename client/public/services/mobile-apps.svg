@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#1E1E2F"/>
+  
+  <!-- Tech pattern background -->
+  <g opacity="0.2">
+    <circle cx="100" cy="100" r="5" fill="#6d28d9"/>
+    <circle cx="200" cy="150" r="5" fill="#6d28d9"/>
+    <circle cx="300" cy="100" r="5" fill="#6d28d9"/>
+    <circle cx="400" cy="150" r="5" fill="#6d28d9"/>
+    <circle cx="500" cy="100" r="5" fill="#6d28d9"/>
+    <circle cx="600" cy="150" r="5" fill="#6d28d9"/>
+    <circle cx="700" cy="100" r="5" fill="#6d28d9"/>
+    <circle cx="100" cy="200" r="5" fill="#6d28d9"/>
+    <circle cx="200" cy="250" r="5" fill="#6d28d9"/>
+    <circle cx="300" cy="200" r="5" fill="#6d28d9"/>
+    <circle cx="400" cy="250" r="5" fill="#6d28d9"/>
+    <circle cx="500" cy="200" r="5" fill="#6d28d9"/>
+    <circle cx="600" cy="250" r="5" fill="#6d28d9"/>
+    <circle cx="700" cy="200" r="5" fill="#6d28d9"/>
+    <circle cx="100" cy="300" r="5" fill="#6d28d9"/>
+    <circle cx="200" cy="350" r="5" fill="#6d28d9"/>
+    <circle cx="300" cy="300" r="5" fill="#6d28d9"/>
+    <circle cx="400" cy="350" r="5" fill="#6d28d9"/>
+    <circle cx="500" cy="300" r="5" fill="#6d28d9"/>
+    <circle cx="600" cy="350" r="5" fill="#6d28d9"/>
+    <circle cx="700" cy="300" r="5" fill="#6d28d9"/>
+    
+    <!-- Connection lines -->
+    <line x1="100" y1="100" x2="200" y2="150" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="200" y1="150" x2="300" y2="100" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="300" y1="100" x2="400" y2="150" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="400" y1="150" x2="500" y2="100" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="500" y1="100" x2="600" y2="150" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="600" y1="150" x2="700" y2="100" stroke="#6d28d9" stroke-width="1"/>
+    
+    <line x1="100" y1="200" x2="200" y2="250" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="200" y1="250" x2="300" y2="200" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="300" y1="200" x2="400" y2="250" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="400" y1="250" x2="500" y2="200" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="500" y1="200" x2="600" y2="250" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="600" y1="250" x2="700" y2="200" stroke="#6d28d9" stroke-width="1"/>
+    
+    <line x1="100" y1="300" x2="200" y2="350" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="200" y1="350" x2="300" y2="300" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="300" y1="300" x2="400" y2="350" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="400" y1="350" x2="500" y2="300" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="500" y1="300" x2="600" y2="350" stroke="#6d28d9" stroke-width="1"/>
+    <line x1="600" y1="350" x2="700" y2="300" stroke="#6d28d9" stroke-width="1"/>
+  </g>
+
+  <!-- Mobile phone outline -->
+  <rect x="300" y="50" width="200" height="300" rx="20" fill="#2A2A40" stroke="#6d28d9" stroke-width="3"/>
+  
+  <!-- Phone screen -->
+  <rect x="310" y="70" width="180" height="240" rx="5" fill="#151523"/>
+  
+  <!-- App icons -->
+  <rect x="325" y="85" width="45" height="45" rx="10" fill="#9333EA" opacity="0.8"/>
+  <rect x="380" y="85" width="45" height="45" rx="10" fill="#9333EA" opacity="0.6"/>
+  <rect x="435" y="85" width="45" height="45" rx="10" fill="#9333EA" opacity="0.7"/>
+  
+  <rect x="325" y="140" width="45" height="45" rx="10" fill="#9333EA" opacity="0.5"/>
+  <rect x="380" y="140" width="45" height="45" rx="10" fill="#9333EA" opacity="0.9"/>
+  <rect x="435" y="140" width="45" height="45" rx="10" fill="#9333EA" opacity="0.6"/>
+  
+  <rect x="325" y="195" width="45" height="45" rx="10" fill="#9333EA" opacity="0.7"/>
+  <rect x="380" y="195" width="45" height="45" rx="10" fill="#9333EA" opacity="0.5"/>
+  <rect x="435" y="195" width="45" height="45" rx="10" fill="#9333EA" opacity="0.8"/>
+  
+  <!-- App navigation -->
+  <rect x="325" y="250" width="155" height="40" rx="20" fill="#1A1A2E" stroke="#6d28d9" stroke-width="1"/>
+  <circle cx="353" cy="270" r="8" fill="#9333EA"/>
+  <circle cx="400" cy="270" r="8" fill="#9333EA" opacity="0.7"/>
+  <circle cx="447" cy="270" r="8" fill="#9333EA" opacity="0.5"/>
+  
+  <!-- Home button -->
+  <circle cx="400" cy="330" r="15" fill="#151523" stroke="#6d28d9" stroke-width="1"/>
+  
+  <!-- Mobile Apps text -->
+  <text x="400" y="370" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="white">Mobile Applications</text>
+</svg>
