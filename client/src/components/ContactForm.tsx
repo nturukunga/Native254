@@ -12,7 +12,7 @@ import { useToast } from '@/hooks/use-toast'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email saddress'),
+  email: z.string().email('Please enter a valid email address'),
   phone: z.string().optional(),
   subject: z.string().min(5, 'Subject must be at least 5 characters'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
@@ -41,7 +41,7 @@ export default function ContactForm() {
     setSubmitError('')
 
     try {
-      const response = await fetch('http://0.0.0.0:5000/api/contact', {
+      const response = await fetch('http://localhost:8080/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
