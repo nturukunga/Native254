@@ -50,21 +50,21 @@ const services = [
 
 const team = [
   {
-    name: 'John Doe',
+    name: 'Munene Howell',
     position: 'CEO & Founder',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    bio: 'With over 15 years in tech, John leads our company with innovation and strategic vision.'
+    image: 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80',
+    bio: 'Munene leads our company with innovation and strategic vision.'
   },
   {
-    name: 'Jane Smith',
+    name: 'Leen Karanja',
     position: 'Lead Developer',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    bio: 'Jane is a full-stack developer with expertise in React, Node.js, and cloud architecture.'
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=M3w5MDh8MHwxfGFsbHwxfHx8fHx8fDJ8fDE2OTk3NjYwODU&ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    bio: 'Leen is a full-stack developer with expertise in React, Node.js, and cloud architecture.'
   },
   {
     name: 'David Johnson',
     position: 'UX Designer',
-    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+    image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', 
     bio: 'David creates intuitive user experiences with a focus on accessibility and user satisfaction.'
   }
 ]
